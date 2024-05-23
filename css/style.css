@@ -39,7 +39,22 @@ body {
     color: var(--brand);
 }
 
+#logo-navbar {
+    height: 97px;
+    width: 185px;
+}
 
+#contato-nav {
+    height: 165px;
+    width: 159px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+#contato-img {
+    height: 108px;
+    width: 108px;
+}
 
 .navbar-brand {
     font-size: 32px;
@@ -57,7 +72,10 @@ p {
     font-size: 24;
 }
 
-
+#img-princ {
+    height: 50%;
+    width: 50%;
+}
 
 .link-btn {
     color: var(--body);
@@ -137,6 +155,13 @@ section {
     background-color: #6C90F4;
 }
 
+#qs-h1 {
+    font-size: 32px;
+}
+
+#qs-h2 {
+    font-size: 24px;
+}
 /* SOBRE */
 
 .img-qs {
@@ -361,7 +386,17 @@ footer {
     justify-content: center;
 }
 
+.btn-bottom {
+    color: #fff;
+    background-color: #6C90F4;
+}
 
+.btn-bottom:hover {
+    transition: 0.8s;
+    background-color: #6C90F4;
+    opacity: 100%;
+
+}
 
 .footer-top {
     padding-bottom: 30px;
