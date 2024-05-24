@@ -33,11 +33,9 @@ body {
 .navbar {
     background-color: #0C042B;
     color: #fff;
+    height: 199px;
 }
 
-.navbar .navbar-nav .nav-link.active {
-    color: var(--brand);
-}
 
 #logo-navbar {
     height: 97px;
@@ -60,9 +58,6 @@ body {
     font-size: 32px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: white;
-}
 
 h1 {
     font-size: 32px;
@@ -113,14 +108,17 @@ img {
     transform: translateX(3px);
 }
 
+.texto-up {
+    text-align: center;
+}
+
 section {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /* INICIO */
 #inicio {
     background-color: white;
-    color: blue;
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -130,7 +128,14 @@ section {
 
 
 .btn-brand {
-    background-color: var(--brand);
+    background-color: #2E2358;
+    color: #FFF;
+    margin-left: 10px;
+    height: 55.75px;
+    width: 143.22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-brand:hover {
@@ -202,7 +207,16 @@ section {
     margin-bottom: 24px;
 }
 
+#depoimento {
+    height: 608px;
+    padding: 0;
+}
 
+#img-depoimento {
+    width: 376px;
+    height: 546px;
+    margin-top: 30px;
+}
 /* SERVIÇOS */
 
 #servicos {
@@ -220,27 +234,31 @@ section {
 }
 
 #link {
-    color: #0000;
-    text-decoration: none;
+    color: #0C042B;
     transition: none;
 }
 
-/* CONQUISTAS */
-#conquistas {
-    background: linear-gradient(to right, #1B1F34, rgba(29, 36, 71, 0.3)), url(../img/cover_2.jpg);
-    background-size: cover;
-    background-position: center;
+.servicos-ul {
+    font-size: 24px;
+    text-align: left;
 }
 
-#conquistas h1 {
-    color: var(--brand);
+.cargas {
+    margin-left: 40px;  
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
+.img-serv {
+    height: 50%;
+    width: 50%;
+}
+/* FROTA E EQUIPE */
 
 
 .frota-h2 {
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* Diferenciais */
@@ -310,50 +328,16 @@ section {
     transition: 0.3ms ease;	
 }
 
-
-/* GALERIA */
-
-
-#galeria {
-    background-color: var(--bg1);
+.img-frota {
+    height: 900px;
+    width: 100%;
 }
 
+/* CERTIFICADOS */
 
 
 
-/* AVALIAÇÕES */
-
-
-
-#reviews {
-    background-color: var(--bg1);
-}
-
-.review {
-    padding: 32px;
-    background-color: var(--bg2);
-    position: relative;
-}
-
-.review .icon {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    background-color: var(--brand);
-    color: var(--bg1);
-    justify-content: center;
-    border-radius: 100px;
-    position: absolute;
-    right: 48px;
-}
-
-.review img {
-    width: 60px;
-    border-radius: 100px;
-}
-
-#clientes {
+#certificados {
     background-color: #fff;
 }
 
@@ -367,7 +351,6 @@ section {
    margin: 10%;
    margin-top: 60px;
 }
-
 
 
 
@@ -405,4 +388,9 @@ footer {
 .footer-bottom {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+#contato-btm {
+    height: 134px;
+    width: 134px;
 }
