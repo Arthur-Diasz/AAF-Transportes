@@ -12,9 +12,8 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: var(--body);
     background-color: var(--bg2);
-   
+   color: #fff;
 }
 
 
@@ -33,9 +32,14 @@ body {
 .navbar {
     background-color: #0C042B;
     color: #fff;
-    height: 199px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
+.navbar-info {
+    margin-left: 60px;
+}
 
 #logo-navbar {
     height: 97px;
@@ -47,6 +51,7 @@ body {
     width: 159px;
     text-decoration: none;
     color: #FFF;
+    margin-bottom: 30px;
 }
 
 #contato-img {
@@ -113,13 +118,13 @@ img {
 }
 
 section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 /* INICIO */
 #inicio {
     background-color: white;
-    min-height: 100vh;
+    min-height: 130vh;
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -140,9 +145,8 @@ section {
 
 .btn-brand:hover {
     transition: 0.8s;
-    background-color: transparent;
-    color: var(--brand);
-    border-color: var(--brand);
+    background-color: #0C042B;
+    color: #0C042B;
 }
 
 .btn-outline-brand {
@@ -208,14 +212,16 @@ section {
 }
 
 #depoimento {
-    height: 608px;
     padding: 0;
 }
 
 #img-depoimento {
-    width: 376px;
-    height: 546px;
+    /*width: 376px;
+    height: 546px; */
     margin-top: 30px;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 30px;
 }
 /* SERVIÇOS */
 
@@ -240,7 +246,15 @@ section {
 
 .servicos-ul {
     font-size: 24px;
+    list-style: none;
+}
+
+.servicos-li {
     text-align: left;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 20%;
 }
 
 .cargas {
@@ -317,15 +331,21 @@ section {
 }
 
 .foto-equipe {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
     cursor: pointer;
+    display: block;
 }
 
-.foto-equipe:hover {
-    -webkit-filter: none;	
-	filter: none;
-    transition: 0.3ms ease;	
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.linkedin-img {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+  right: 10px; /* Ajuste conforme necessário */
+  width: 51px; /* Ajuste conforme necessário */
+  height: auto;
 }
 
 .img-frota {
@@ -347,9 +367,16 @@ section {
     width: 100%;
     margin-bottom: 50px;
 }
+
 #texto-centro h1{
-   margin: 10%;
-   margin-top: 60px;
+    padding-top: 20px;
+    margin-left: 7%;
+}
+
+.certificado {
+    height: 302px;
+    width:  302px;
+    margin-left: 20px;
 }
 
 
@@ -357,7 +384,7 @@ section {
 /* FOOTER */
 
 footer {
-    padding-top: 160px;
+    padding-top: 100px;
     background-color: #0C042B;
 }
 
@@ -371,7 +398,7 @@ footer {
 
 .btn-bottom {
     color: #fff;
-    background-color: #6C90F4;
+    background-color: #113cb1;
 }
 
 .btn-bottom:hover {
@@ -390,7 +417,23 @@ footer {
     padding-bottom: 30px;
 }
 
+#logo-bt {
+    margin-bottom: 30px;
+    height: 137px;
+    width: 261px;
+}
+
 #contato-btm {
     height: 134px;
     width: 134px;
+    margin-left: 120px;
 }
+
+@media (max-width: 992px) {
+    .btn-brand {
+        margin-bottom: 10px;
+    }
+    .td-certificados {
+        margin-left: 20%;
+    }
+  }
