@@ -179,6 +179,17 @@ section {
     height: 660px;
 }
 
+#quem-somos {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#quem-somos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .texto-qs {
     margin-left: 0;
     margin-top: 50px;
@@ -310,7 +321,84 @@ section {
     background-color: #fff;
     color: #0C042B;
 }
+/* CRIAÇÃO DAS ANIMAÇÕES  */
+#mvpo {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+#mvpo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#depoimento {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#depoimento.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#servicos {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#servicos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#certificados {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#certificados.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#frota {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#frota.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#equipe {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#equipe.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ------ FINAL ----- */
 #mvpo h1 {
     color: #0C042B;
 }
