@@ -2,7 +2,7 @@
 
 :root {
     --bg1: #0C042B;
-    --bg2: #1B1F34;
+    --bg2: #0C042B;
     --body: #fff;
     --brand: #FFAB76;
     --white: #fff;
@@ -35,6 +35,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    height: 25vh;
 }
 
 .navbar-info {
@@ -213,6 +214,7 @@ section {
 
 #depoimento {
     padding: 0;
+    background-color: #0C042B;
 }
 
 #img-depoimento {
@@ -414,7 +416,6 @@ footer {
 
 .footer-bottom {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 #logo-bt {
@@ -436,4 +437,16 @@ footer {
     .td-certificados {
         margin-left: 20%;
     }
-  }
+
+    .fullscreen-navbar {
+        width: 100vw;
+        height: 100vh;
+        background-color: #0C042B; /* mesmo tom de bg-dark */
+        z-index: 1050;
+        overflow: auto;
+    }
+
+
+
+}
+  
