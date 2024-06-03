@@ -414,7 +414,9 @@ footer.visible {
 .team-member {
     position: relative;
 }
-
+.img-container:hover {
+    transform: scale(1.05);
+}
 .team-member small {
     font-size: 20px;
     color: #0C042B;
@@ -534,7 +536,13 @@ footer {
         overflow: auto;
     }
 
+    .img-serv {
+        width: 90%;
+    }
 
-
+    .img-frota {
+        height: 100%;
+        width: 100%;
+    }
 }
   

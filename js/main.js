@@ -40,6 +40,6 @@ document.querySelectorAll('.nav-link').forEach(item => {
 
     const sectionFooter = document.getElementById('footer');
     observer.observe(sectionFooter);
-});
 
+});
 
