@@ -43,3 +43,20 @@ document.querySelectorAll('.nav-link').forEach(item => {
 
 });
 
+//Ajustar o navegamento em cada dispositivo.
+document.querySelectorAll('.scroll-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const navHeight = document.getElementById('navbar').offsetHeight; // Obter a altura da barra de navegação
+
+        window.scrollTo({
+            top: targetElement.offsetTop - navHeight,
+            behavior: 'smooth'
+        });
+        history.pushState(null, null, `#${targetId}`);
+    });
+});
+
